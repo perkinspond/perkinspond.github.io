@@ -35,7 +35,7 @@
                         window.setTimeout( 
                             function() {
                                 update_when_not_changed( path, id, update_function)
-                            }, 3000);
+                            }, 100);
                     }
                 })
                 .catch(function(error) {
@@ -58,7 +58,7 @@
                         window.setTimeout( 
                             function() {
                                 update_when_not_changed( path, id, update_function)
-                            }, 2000);
+                            }, 100);
                     }
                 })
                 .catch(function(error) {
@@ -85,7 +85,7 @@
             // console.clear();
             debug_log( "Updating all elements")
             get_image( "/cam1/latest.jpg", "cam1_img");
-            window.setTimeout( refresh_elements, 20000);
+            window.setTimeout( refresh_elements, 5000);
         }
     </script>
 
